@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/new.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BROTHERHOOD</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript">//'0pen menu' 
+	$(document).ready(function(){ 
+    
+	var touch = $('#touch-menu'); 
+	var menu = $('.menu'); 
+
+	$(touch).on('click', function(e) { 
+	e.preventDefault(); 
+	menu.slideToggle(); 
+
+
+	}); 
+	$(window).resize(function(){ 
+	var w = $(window).width(); 
+	if(w > 540 && menu.is(':hidden')) { 
+	menu.removeAttr('style'); 
+	} 
+	}); 
+	}); 
+	</script>
+	
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="container-logo">
+			<div class="main-container-logo clearfix">
+				<div class="logo"><img src="images/logo.png" alt="logo"></div>
+				<p class="basket"><a><span class="icon-shopping-basket"></span>Кошик: 27 товарів</a></p>
+				<ul class="language">
+					<li><a href="">Рус</a></li>
+					<li><a href="">Укр</a></li>
+					<li><a href="">Eng</a></li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="container-menu">
+  			<a href="#" id="touch-menu">Меню</a>
+			<nav class="maine-menu">
+				<ul class="menu clearfix">
+					<li><a href="#">новини</a></li>
+					<li><a href="#">магазин</a></li>
+					<li><a href="#">дилери</a></li>
+					<li><a href="#">доставка</a></li>
+					<li><a href="#">про нас</a></li>
+					<li><a href="#">контакти</a></li>
+				</ul> 
+			</nav>
+		</div>
+		<div class="conteiner-catalog">
+			<div class="main-catalog">
+				<ul class="catalog clearfix">
+					<li class="tactical"><a href="#">Tactical</a></li>
+					<li class="highland"><a href="#">Highland</a></li>
+					<li class="simple"><a href="#">Simple</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="section-catalog clearfix">
+		<div class="main-contact-with-us">
+			<ul class="contact-with-us">
+			<li ><span class="icon-phone2 icon-contacts"></span></li>
+			<li><span class="icon-gift icon-contacts"></span></li>
+			<li><span class="icon-mail-envelope-closed icon-contacts"></span></li>
+		</ul>
+		</div>
+		<div class="main-section-catalog clearfix">
+			<div class="catalog-description">
+				<h2> Серія</br><span class="name-catalog">Tactical</span></h2>
+				<p><span class="span-bold clearfix">Власна розробка</span> українських військових,</br>  що увібрала в себе <span class="span-bold">найкраще</span> з нині</br> можливого:
+					<ul class="features-description">
+						<li>якість тканин і пошиву</li>
+						<li>зручність крою</li>
+						<li>функціональність у використанні</li>
+					</ul>
+					<a class="go-to-catalog" href="#">Перейти до каталогу</a>
+				</p>
+			</div>
+			<div class="catalog-solders">
+				<img class="solders" src="images/solders.png" alt="solders">
+			</div>
+		</div>	
+	</div>
+	<div class="sectoin-cloth">
+		<h3 class="name-h cloth-h">Тканина</h3>
+		<div class="maine-section-cloth">
+			<div class="slider">
+				<h4 class="slider-h4">Тип тканини: <span>Кордура</span></h4>
+				<p class="slider-p">Тканина кордура - нейлонова водонепроникна тканина з підвищеною стійкістю до будь механічних впливів. PU просочення і особливе плетіння ниток забезпечують повну водоніпроніцаемость. Тканина стійка до перепадів температур і впливу ультрафіолету.</p>
+				<div class="item">
+					<p class="slider-p">
+						<span>Переваги:</span> вологостійкість, вогнестійкість</p>
+					<span>Доступні кольори:</span>
+
+					<nav class="clearfix">
+						<ul class="cloth-color">
+
+							<li>
+							<span class="color1"></span>
+							</li>
+							<li>
+								<span class="color2"></span>
+							</li>
+							<li>
+								<span class="color3"></span>
+							</li>
+							<li>
+								<span class="color4"></span>
+							</li>
+							<li>
+								<span class="color5"></span>
+							</li>
+							<li>
+								<span class="color6"></span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<a class="go-to-catalog-cloth" href="#">Перейти до каталогу</a>
+			</div>
+		</div>
+	</div>
+	<div class="how-we-work">
+		<h3 class="name-h work-h">Як ми працюємо</h3>
+		<div class="work-first clearfix">
+				<img class="work1" src="images/work1.png" alt="work1">
+				<div class="discription-work">
+					<h4 class="main-h4">спочатку <span>Ідея</span></h4>
+					<ul class="main-ul">
+						<li>Усі моделі розробляються українськими  військовими, тому моделі досконалі та зручні</li>
+						<li>Кожен елемент моделі знаходиться на своєму функціональному місці, для нього підібраний найкращий крій та матеріали, використовується найдосконаліша фурнітура</li>
+						<li>Ідея постійно вдосконалюється, враховуються всі помилки, завдяки налагодженому діалогу з реальними користувачами форми</li>
+					</ul>
+				</div>
+		</div>
+	</div>	
+	<div class="work-second">
+		<div class="maine-work-second clearfix">
+				<img class="work1 secondimg" src="images/work2.png" alt="work1">
+				<div class="discription-work second-discription">
+					<h4 class="main-h4">Потім <span>створення речі</span></h4>
+					<ul class="main-ul">
+						<li>Виробництво налагоджене на власних виробничих потужностях, а отже якість виробу контролюється нами особисто</li>
+						<li>Для зменшення помилок через людський фактор, всі процеси максимально автоматизовані</li>
+						<li>Кожен вироблений зразок гарантованно проходить контроль якості. Помилки виключені</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="work-third">
+		<div class="main-work-third clearfix">
+			<img class="work1" src="images/work3.png" alt="work1">
+				<div class="discription-work third-discription">
+					<h4 class="main-h4">І нарешті<span> Тестування</span></h4>
+					<ul class="main-ul">
+						<li>Одяг тестується як на полігонах, так і у реальних умовах АТО</li>
+
+						<li>Постійно збирається статистика відгуків та побажань</li>
+
+						<li>Всі доцільні відгуки користувачів нашої продукції завжди трансформуються у нові ідеї</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+	<div class="map">
+		<div class="main-map">
+			<h3 class="name-h map-h">Наші дилери</h3>
+		</div>
+		<div class="code-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2713424.8450470315!2d31.18287!3d48.383022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d1d9c154700e8f%3A0x1068488f64010!2z0KPQutGA0LDQuNC90LA!5e0!3m2!1sru!2sua!4v1478450305521" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<footer class="footer ">
+		<div class="maine-footer clearfix">
+			<div class="foter-logo"><img src="images/logo.png" alt="logo-footer">
+			</div>
+			<ul class="footer-phone">
+				<li><span class="icon-phone2 icon-stile"></span>Замовити зворотнiй дзвiнок</li>
+				<li class="phone">+38 (050) <span>317-64-44</span> </li>
+				<li class="phone">+38 (067) <span>325-57-53</span></li>
+			</ul>
+			<ul class="footer-adres">
+				<li><span class="icon-mail-envelope-closed icon-stile"></span>sales@brother-hood.com.ua</li>
+				<li class="metro">ст. м “Либідська”</li>
+				<li class="city">м. Київ, вул. К. Малевича, 86 І</li>
+			</ul>
+		</div>
+	</footer>
+</div>
+  
+</body>
+</html>				
+	
